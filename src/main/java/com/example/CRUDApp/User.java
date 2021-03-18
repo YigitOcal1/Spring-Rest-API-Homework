@@ -1,13 +1,16 @@
 package com.example.CRUDApp;
 
+
 public class User {
+	
+	// Properties of user object
 	private int id;
 	private String name;
 	private String surname;
 	
 	
 	
-	
+	// Constructor
 	public User(int id,String name,String surname) {
 		this.id=id;
 		this.name=name;
@@ -15,7 +18,7 @@ public class User {
 	}
 
 
-
+       // Getter and setter methods
 
 	public int getId() {
 		return id;
