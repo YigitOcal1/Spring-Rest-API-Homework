@@ -9,53 +9,55 @@ import java.util.Map;
 
 
 public class UserService {
-
+  
+	// Using hashmap to store user objects
 	 static Map<Integer,User> users=new HashMap<>();
 	
+	// Sample user objects 
 	static {
 	User user1=(new User(1,"James","Brison"));
 	User user2=(new User(2,"Michael","Tonny"));
 	
 	users.put(user1.getId(), user1);
 	users.put(user2.getId(), user2);
-
+		
 	}
 
-	
+	// Method for listing all users
 	public static List<User> getAllUser(){
 		return new ArrayList<>(users.values());
 	}
-
-   public static User addUser(User user) {
-	   //index +=1;
+        
+	// Method for adding users
+        public static User addUser(User user) {
+	   
 	   user.setId(user.getId());
 	   users.put(user.getId(), user);
 	   return user;
 	  
-   }
-
- public static User updateUser(int id,User user) {
+        }
+        
+	// Method for update user properties
+        public static User updateUser(int id,User user) {
 
 	 user.setId(id);
 	 users.put(id, user);
 	 return user;
- }
-
-public static User deleteUser(int id) {
+       }
+       
+	// Method for delete user with using id
+        public static User deleteUser(int id) {
 	return users.remove(id);
-}
-
-public static boolean isExist(int id) {
+       }
+        
+	// Method for the is user in the system or not
+        public static boolean isExist(int id) {
 	if(!users.containsKey(id)) {
 		return false;
 		
 	}
-    return true;
-}
-
-
-
-
+        return true;
+     }
 
 
 }
