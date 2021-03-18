@@ -15,12 +15,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserController {
 	
-	
+	// Get operation for the list all users 
 	@GetMapping("/users")
 	public List<User> getAllUsers(){
 		return UserService.getAllUser();
 	}
-			
+	
+	// Post operation for add user if any property of user is null, user gets an error
 	@PostMapping("/addUser")
 	public ResponseEntity<Object> adddUser(@RequestBody User user)
 	{
@@ -32,6 +33,7 @@ public class UserController {
 				"User Succesfully Created With name "+user.getName()+" surname: "+user.getSurname()+" id: "+user.getId(),HttpStatus.CREATED);
 	}
 	
+	// Put operation to update properties of user with using id
 	@PutMapping("/updateUser/{userId}")
 	public ResponseEntity<Object> updateUser(@PathVariable int userId,@RequestBody User user){
 		if(user.getId()!=userId) {
@@ -43,7 +45,8 @@ public class UserController {
 				"User Succesfully Updated With "+" id: "+user.getId(),HttpStatus.OK);
 		 
 	}
-
+        
+	// Delete operation to delete user with using the user id
 	@DeleteMapping("/deleteUser/{userId}")
 	 public ResponseEntity<Object> deleteUser(@PathVariable int userId) {
 		if(UserService.isExist(userId)==false)
