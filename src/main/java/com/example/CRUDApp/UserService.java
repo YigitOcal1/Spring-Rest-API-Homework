@@ -15,8 +15,8 @@ public class UserService {
 	
 	// Sample user objects 
 	static {
-	User user1=(new User(1,"James","Brison"));
-	User user2=(new User(2,"Michael","Tonny"));
+	User user1=(new User(1,"Bora","Bola"));
+	User user2=(new User(2,"Michael","Odya"));
 	
 	users.put(user1.getId(), user1);
 	users.put(user2.getId(), user2);
