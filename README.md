@@ -39,6 +39,7 @@ Error if any property of user is null gets and bad request error
 
 
 ### Delete operation
+
 ![delete succes](https://user-images.githubusercontent.com/63492956/111710625-17585b00-885b-11eb-8b0d-775ab785da2d.png)
 
 If user is not exist it delete operation gets an error
@@ -46,9 +47,11 @@ If user is not exist it delete operation gets an error
 
 
 ### Put operation
+
 ![put succesful](https://user-images.githubusercontent.com/63492956/111710699-3951dd80-885b-11eb-86b8-c7dd1e02e545.png)
 
 If user with that id is not found put operation gets and error
+
 ![put errorr](https://user-images.githubusercontent.com/63492956/111710747-4bcc1700-885b-11eb-8683-a035ecc33988.png)
 
 Lastly, I controlled all functions of the system with using the postman and saw that there are no problem in the CRUD application.
