@@ -28,9 +28,23 @@ And I used Postman to test other functionalities of the program.
 
 ![post result](https://user-images.githubusercontent.com/63492956/111710342-8c776080-885a-11eb-98b6-70cd07430f8f.png)
 
-Error
+Error if any property of user is null gets and bad request error
 
 ![post id error result](https://user-images.githubusercontent.com/63492956/111710356-9600c880-885a-11eb-9f02-4d688e0b94ed.png)
+
+![image](https://user-images.githubusercontent.com/63492956/111710571-f98af600-885a-11eb-80ee-bfe3d03fe986.png)
+
+### Delete operation
+![delete succes](https://user-images.githubusercontent.com/63492956/111710625-17585b00-885b-11eb-8b0d-775ab785da2d.png)
+
+If user is not exist it delete operation gets an error
+![delete error](https://user-images.githubusercontent.com/63492956/111710635-1e7f6900-885b-11eb-82b5-831c58f4d39b.png)
+
+### Put operation
+![put succesful](https://user-images.githubusercontent.com/63492956/111710699-3951dd80-885b-11eb-86b8-c7dd1e02e545.png)
+
+If user with that id is not found put operation gets and error
+![put errorr](https://user-images.githubusercontent.com/63492956/111710747-4bcc1700-885b-11eb-8683-a035ecc33988.png)
 
 
 
