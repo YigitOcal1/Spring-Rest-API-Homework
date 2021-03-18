@@ -24,14 +24,4 @@ public ResponseEntity<Object> handleNotFoundException(NotFoundException exceptio
 
 	}
 
-
-@ExceptionHandler(Exception.class)
-
-public ResponseEntity<?> handleGlobalExceptionHandling(Exception exception){
-	Error error=new Error(exception.getMessage(), HttpStatus.NOT_FOUND,ZonedDateTime.now());
-	
-	return new ResponseEntity<>(error,HttpStatus.INTERNAL_SERVER_ERROR);
-
-
-}
 }
