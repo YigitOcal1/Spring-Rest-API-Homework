@@ -14,15 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class UserController {
-
 	
 	
 	@GetMapping("/users")
 	public List<User> getAllUsers(){
 		return UserService.getAllUser();
 	}
-	
-
 			
 	@PostMapping("/addUser")
 	public ResponseEntity<Object> adddUser(@RequestBody User user)
@@ -39,7 +36,6 @@ public class UserController {
 	public ResponseEntity<Object> updateUser(@PathVariable int userId,@RequestBody User user){
 		if(user.getId()!=userId) {
 			throw new NotFoundException("User is not found with this id: "+userId);
-			//return new ResponseEntity<>("User is not found with this id: "+userId,HttpStatus.NOT_FOUND);
 		}
 		UserService.updateUser(userId, user);
 		return new ResponseEntity<>(
@@ -53,7 +49,6 @@ public class UserController {
 		if(UserService.isExist(userId)==false)
 		{
 			throw new NotFoundException("User is not found with this id: "+userId);
-			//return new ResponseEntity<>("User is not found with this id: "+userId,HttpStatus.NOT_FOUND);
 
 		}
 		UserService.deleteUser(userId);		
