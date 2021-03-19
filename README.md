@@ -14,8 +14,9 @@ User class for user objects
 User API to accomplish CRUD operations 
 ![image](https://user-images.githubusercontent.com/63492956/111709208-44efd500-8858-11eb-8a88-6e6af107cf10.png)
 
-For making CRUD application I created GET method to read users that is recorded on the system, POST method to create users and add to the system if any property of user is null it cannot to be added to system, PUT method to the update name or surname of user with given id if try update user who is not in the system it gives and error and last one is the DELETE method to delete user with given id from the system if try to delete user who is not in the system it gives an error. After completing the code writing phase firstly, I tested the CRUD application with using the localhost but I could not use port 8080 that is why I change to server port to 8081 and I started to test application with local host when I make sure there are no problem with code.
-I opened a new private Github repository and uploded all files to Github with using Git Bash.
+  For making CRUD application I created GET method to read users that is recorded on the system, POST method to create users and add to the system if any property of user is null it cannot to be added to system, PUT method to the update name or surname of user with given id if try update user who is not in the system it gives and error and last one is the DELETE method to delete user with given id from the system if try to delete user who is not in the system it gives an error. After completing the code writing phase firstly, I tested the CRUD application with using the localhost but I could not use port 8080 that is why I change to server port to 8081 and I started to test application with local host when I make sure there are no problem with code.
+
+  I opened a new private Github repository and uploded all files to Github with using Git Bash.
 And I need to connect CRUD application with a cloud service I chose Heroku for this purpose and I linked Github and Heroku account with deploying Github repository to
 Heroku I got this link: https://crudappp.herokuapp.com/ and I tried to /users function and I saw that program working correctly.
 And I used Postman to test other functionalities of the program.
