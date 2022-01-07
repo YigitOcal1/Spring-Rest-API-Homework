@@ -1,5 +1,4 @@
-# CMPE-328-Homework1
-Yiğithan Öcal
+
 
 # Restful Api CRUD Application with Spring and Heroku
 
